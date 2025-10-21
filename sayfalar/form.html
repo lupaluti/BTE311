@@ -2,47 +2,53 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8">
-    <title>Üyelik Formu</title>
+    <title>Form Ödev</title>
   </head>
-  <body>
-    <h2>Üyelik Formu</h2>
-    <p>Üye olmak için lütfen aşağıda verilen bölümleri uygun bir biçimde doldurunuz.</p>
+  <body style="font-family: Arial, sans-serif; background-color: #e6ffcc; margin: 40px;">
+    <div style="background-color: white; border:2px solid #336600; padding: 30px; width: 400px; margin: auto">
+      <fieldset style="background-color:#4d9900">
+      <h2 style="text-align:center; color:white;">Üyelik Formu</h2>
+      </fieldset>
+      <p style="text-align:center;">Üye olmak için lütfen aşağıdaki bilgileri doldurunuz.</p>
 
-    <form method="post">
-      <label for="ad">Ad:</label><br>
-      <input type="text" id="ad" name="ad"><br><br>
+      <form method="post">
+        <label for="ad">Ad:</label><br>
+        <input type="text" id="ad" name="ad" style="padding:6px; border:1px solid #ccc;"><br><br>
 
-      <label for="soyad">Soyad:</label><br>
-      <input type="text" id="soyad" name="soyad"><br><br>
+        <label for="soyad">Soyad:</label><br>
+        <input type="text" id="soyad" name="soyad" style="padding:6px; border:1px solid #ccc;"><br><br>
 
-      <label for="kullanici">Kullanıcı Adı:</label><br>
-      <input type="text" id="kullanici" name="kullanici"><br><br>
+        <label for="kullanici">Kullanıcı Adı:</label><br>
+        <input type="text" id="kullanici" name="kullanici" style="padding:6px;  border:1px solid #ccc;"><br><br>
 
-      <label for="email">E-posta:</label><br>
-      <input type="email" id="email" name="email"><br><br>
+        <label for="email">E-posta:</label><br>
+        <input type="email" id="email" name="email" style="padding:6px;  border:1px solid #ccc;"><br><br>
 
-      <label for="sifre">Şifre:</label><br>
-      <input type="password" id="sifre" name="sifre"><br><br>
+        <label for="sifre">Şifre:</label><br>
+        <input type="password" id="sifre" name="sifre" style="padding:6px; border:1px solid #ccc;"><br><br>
 
-      <label for="dogum">Doğum Tarihi:</label><br>
-      <input type="date" id="dogum" name="dogum"><br><br>
+        <label for="dogum">Doğum Tarihi:</label><br>
+        <input type="date" id="dogum" name="dogum" style="padding:6px; border:1px solid #ccc;"><br><br>
 
-      <label>Cinsiyet:</label>
-      <input type="radio" id="kadin" name="cinsiyet" value="Kadın">
-      <label for="kadin">Kadın</label>
-      <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
-      <label for="erkek">Erkek</label>
-      <input type="radio" id="diger" name="cinsiyet" value="Diğer">
-      <label for="diger">Diğer</label><br><br>
+        <label>Cinsiyet:</label><br>
+        <div style="display:flex; gap:10px;">
+          <label><input type="radio" name="cinsiyet" value="Kadın"> Kadın</label>
+          <label><input type="radio" name="cinsiyet" value="Erkek"> Erkek</label>
+          <label><input type="radio" name="cinsiyet" value="Diğer"> Diğer</label>
+        </div><br><br>
 
-      <label for="telefon">Telefon:</label><br>
-      <input type="tel" id="telefon" name="telefon"><br><br>
+        <label for="telefon">Telefon:</label><br>
+        <input type="tel" id="telefon" name="telefon" style="padding:6px; border:1px solid #ccc;"><br><br>
 
-      <label for="ek">Eklemek istedikleriniz:</label><br>
-      <textarea id="ek" name="ek" rows="4" cols="40"></textarea><br><br>
+        <label for="ek">Eklemek istedikleriniz:</label><br>
+        <textarea id="ek" name="ek" rows="4" cols="40" style="padding:6px; border:1px solid #ccc;"></textarea><br><br>
 
-      <input type="submit" value="Gönder">
-      <input type="reset" value="Temizle">
-    </form>
+         <div>
+          <input type="submit" value="Gönder" style="background-color:#4d9900; color:white;  padding:8px 15px">
+
+          <input type="reset" value="Temizle" style="background-color:#ccc; color:black; padding:8px 15px">
+        </div>
+      </form>
+    </div>
   </body>
 </html>
