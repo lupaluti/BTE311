@@ -1,11 +1,81 @@
-<html>
+<!DOCTYPE html>
+<html lang="tr">
 <head>
-<meta charset="utf-8">
-<title>Test Ödevi</title>
+  <meta charset="UTF-8">
+  <title>Test Ödevi</title>
 </head>
-<body>
-  <header>
-    <h1>Test</h1>
-  </header>
+<body style="font-family: Arial, sans-serif; background: #f4f7f8; color: #333; max-width: 800px; margin: 15px auto; padding: 15px;">
+
+  <h1 style="text-align:center; color:#408000">Web Programcılığı Testi</h1>
+
+  <form>
+  <fieldset style="background-color:#f2ffe6; border:1px solid #59b300; padding:15px; margin-bottom:15px;">
+      <fieldset>
+           <h3 style="text-align:center; font-size:22px; color:#59b300; margin-top:20;">Genel Bilgiler</h3>
+      </fieldset>
+      <div style="font-size:14px;">
+         <p>Adınız - Soyadınız</p>
+        <input type="text" style="width:50%; padding:6px;"><br><br>
+
+        <p>Kullanıcı Adınız</p>
+        <input type="text" style="width:50%; padding:6px;"><br><br>
+
+        <p>JavaScript bilginizi 1 ile 10 arasında değerlendiriniz.</p>
+        <input type="range" min="1" max="10" style="width:50%;"><br><br>
+
+        <p>Web programlama öğrenirken en zorlandığınız konu nedir?</p>
+        <textarea rows="3" cols="50" placeholder="Kısaca açıklayınız..." style="width:70%; padding:6px;"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset style="background-color:#ececf9; border:1px solid #333399; padding:15px;">
+      <fieldset>
+        <h3 style="text-align:center; font-size:22px; color:#333399; margin-top:20;">Test Soruları</h3>
+      </fieldset>
+
+      <p>1. HTML’de bağlantı (link) oluşturmak için hangi etiket kullanılır?</p>
+      <label><input type="radio" name="q1"> &lt;link&gt;</label><br>
+      <label><input type="radio" name="q1"> &lt;a&gt;</label><br>
+      <label><input type="radio" name="q1"> &lt;href&gt;</label><br>
+      <label><input type="radio" name="q1"> &lt;url&gt;</label><br><br>
+
+      <p>2. CSS, web sayfalarına etkileşim kazandırmak için kullanılır.</p>
+      <label><input type="radio" name="q2"> Doğru</label>
+      <label><input type="radio" name="q2"> Yanlış</label><br><br>
+
+      <p>3. HTML’de paragraf oluşturmak için kullanılan etiket nedir?</p>
+      <input type="text" style="width:50%; padding:6px;"><br><br>
+
+      <p>4. Aşağıdakilerden hangileri web sayfasının temel yapı taşlarıdır? (Birden fazla işaretlenebilir)</p>
+      <label><input type="checkbox"> HTML</label>
+      <label><input type="checkbox"> CSS</label>
+      <label><input type="checkbox"> JavaScript</label>
+      <label><input type="checkbox"> SQL</label><br><br>
+
+      <p>6. Formdan e-posta adresi belirtmek için hangi input tipi kullanılır?</p>
+      <input type="email" style="width:50%; padding:6px;"><br><br>
+
+      <p>7. CSS'te bir öğeye arka plan rengi vermek için kullanılabilecek bir renk seçiniz.</p>
+      <input type="color" value="#005b96" style="width:50%; height:35px;"><br><br>
+
+      <p>8. CSS'te yazı boyutu genellikle hangi birimle ifade edilir?</p>
+      <input type="text" style="width:50%; padding:6px;"><br><br>
+
+      <p>9. Bir form gönderildiğinde sayfanın yeniden yüklenmeden veri işlemesi için kullanılan teknoloji:</p>
+      <select style="width:50%; padding:6px;">
+        <option>Seçiniz</option>
+        <option>PHP</option>
+        <option>AJAX</option>
+        <option>HTML</option>
+        <option>CSS</option>
+      </select><br><br>
+
+      <p>10. Web sitesi tasarımında kullanılan temel renk sayısını giriniz.</p>
+      <input type="number" min="1" max="10" style="width:50%; padding:6px;"><br><br>
+
+      <input type="submit" value="Gönder" style="background-color:#005b96; color:white; padding:10px 20px; border:none; font-size:16px;">
+    </fieldset>
+  </form>
+
 </body>
 </html>
