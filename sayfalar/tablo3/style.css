@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+.title {
+  text-align: center;
+}
+
+.dersprog {
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.dersprog th, .dersprog td {
+  border: 1px solid #999;
+  padding: 10px;
+}
+
+.dersprog th {
+  background-color: #f2f2f2;
+}
