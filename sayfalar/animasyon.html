@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <title>Animasyon Ödevi</title>
   <style>
-    @keyframes renkDegisim {
-      0% {background-color: red;}
-      50% {background-color: purple;}
-      100% {background-color: red;}
+    @keyframes donme {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
     }
 
     @keyframes opaklik {
@@ -47,16 +46,20 @@
       position: absolute;}
 
     .kirmizi{
-      background-image: url("");
+      background-image: url("../img/surat1.png");
+      background-size: cover;
+      background-position: center;
       margin-top: 100px;
       margin-left: 50px;
-      animation-name: renkDegisim;
+      animation-name: donme;
       animation-iteration-count: infinite;
       animation-duration: 2s;
     }
 
     .mavi{
-      background-color: blue;
+      background-image: url("../img/surat2.png");
+      background-size: cover;
+      background-position: center;
       margin-top: 100px;
       margin-left: 320px;
       animation-name: opaklik;
@@ -65,7 +68,9 @@
     }
 
     .sari{
-      background-color: yellow;
+      background-image: url("../img/surat3.png");
+      background-size: cover;
+      background-position: center;
       margin-top: 100px;
       margin-left: 590px;
       animation-name: zipla;
@@ -76,7 +81,9 @@
     }
 
     .yesil{
-      background-color: green;
+      background-image: url("../img/surat4.png");
+      background-size: cover;
+      background-position: center;
       margin-top: 100px;
       margin-left: 860px;
       animation-name: sagsol;
@@ -86,7 +93,9 @@
     }
     
     .turuncu{
-      background-color: orangered;
+      background-image: url("../img/surat5.png");
+      background-size: cover;
+      background-position: center;
       margin-top: 100px;
       margin-left: 1130px;
       animation-name: buyukkucuk;
