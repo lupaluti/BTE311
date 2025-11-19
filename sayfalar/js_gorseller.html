@@ -92,20 +92,35 @@
   '../img/js_gorseller/js6.png','../img/js_gorseller/js7.png','../img/js_gorseller/js8.png','../img/js_gorseller/js9.png','../img/js_gorseller/js10.png'
   ];
 
-  function rastgeleRenk() {
-    var r = Math.floor(Math.random()*256);
-    var g = Math.floor(Math.random()*256);
-    var b = Math.floor(Math.random()*256);
-    return `rgb(${r},${g},${b})`;
+    function rastgeleSayi255() {
+    let sayi = (Math.random() * 256) % 256;
+    while (sayi % 1 !== 0) { 
+      sayi = (Math.random() * 256) % 256;
+    }
+    return sayi;
   }
 
+  // Rastgele arka plan rengi
+  function rastgeleRenk() {
+    var r = rastgeleSayi255();
+    var g = rastgeleSayi255();
+    var b = rastgeleSayi255();
+    return "rgb(" + r + "," + g + "," + b + ")";
+  }
+
+  // Math.floor vs parseInt vs bitwise yok!
   function rastgeleResimVeRenkGoster() {
-    var index = Math.floor(Math.random() * resimler.length);
-    document.getElementById("randomImage").src = resimler[index];
+    let rastgele = (Math.random() * 10) % 10;
+    while (rastgele % 1 !== 0) {  // tam sayı çıkana kadar tekrar
+      rastgele = (Math.random() * 10) % 10;
+    }
+    document.getElementById("randomImage").src = resimler[rastgele];
     document.body.style.backgroundColor = rastgeleRenk();
   }
 
-  window.onload = rastgeleResimVeRenkGoster;
+  // Fonksiyonu direkt çağır
+  rastgeleResimVeRenkGoster();
+
 
 </script>
 
