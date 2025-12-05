@@ -17,6 +17,9 @@ const deckCards = [
   "b8.png",
 ];
 
+const matchSound = new Audio("sound/dogru.mp3");
+matchSound.volume = 0.6;
+
 const deck = document.querySelector(".deck");
 let opened = [];
 let matched = [];
@@ -244,6 +247,8 @@ function compareTwo() {
 }
 
 function match() {
+    matchSound.currentTime = 0;
+    matchSound.play();   
   /* Access the two cards in opened array and add
   the class of match to the imgages parent: the <li> tag
   */
